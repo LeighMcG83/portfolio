@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    background-color: rgb(100, 100, 100);
+    /* background: radial-gradient(#e66465, #9198e5); */
+    background-image: url('/images/profile-pic-BW.png');
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+}
+

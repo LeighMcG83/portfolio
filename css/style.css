@@ -29,15 +29,15 @@
     z-index: -1;
 }
 
-.header {
-    /* min-height: 100vh;
-    min-width: 100vw; */
-    /* background-color: rgb(100, 100, 100); */
-    /* background: radial-gradient(#e66465, #9198e5); */
-    /* background-image: url("/images/profile-pic-BW.png");
+/* .header {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(100, 100, 100);
+    background: radial-gradient(#e66465, #9198e5);
+    background-image: url("/images/profile-pic-BW.png");
     background-repeat: no-repeat;
-    background-position: 80% 50%; */
-}
+    background-position: 80% 50%;
+} */
 
 .header-wrapper {
     flex-direction: column;
@@ -49,31 +49,68 @@
     border-bottom: 1px solid #a1a1a1;
 }
 
-.profile-pic {
-    /* height: 50vh;
-    width: auto; */
-}
+/* .profile-pic {
+    height: 50vh;
+    width: auto;
+} */
 
-.tile {
+.project-tile {
     width: 100%;
-    height: 300px;
-    background-color: rgba(255, 0, 0, 0.8);
+    height: 250px;
+    /* background-color: rgba(255, 0, 0, 0.8); */
 }
 
+.proj1 {
+    background-image: url(/images/25-mockup-screens.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.proj2 {
+    background-image: url(/images/devilles-home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.proj3 {
+    background-image: url(/images/25-mockup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.proj1,
+.proj2,
+.proj3 {
+    position: relative;
+}
+
+/* add a cover */
+.opacity-box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* .
 .resume {
     background-color: #83ff5d;
     border-radius: 4px;
     padding: 10px 20px;
 }
-
 .fa-download {
     color: #000;
     margin-right: 0.5rem;
 }
-
 .vertical-text {
     writing-mode: vertical-rl;
     text-orientation: sideways;
+}
+.main {
+    margin: 5rem auto;
 }
 
 .main {
@@ -81,12 +118,13 @@
 }
 
 /* mobile sizes
+@m
 @media only screen and (max-width: 480px) {
 }
 
 /* tablets size */
 /* @media only screen and (max-width: 576px) {
-    .tile {
+    .project-tile {
         width: 100%;
         height: 300px;
         background-color: red;
@@ -98,7 +136,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .tile {
+    .project-tile {
         width: 100%;
         height: 300px;
         background-color: red;
@@ -114,13 +152,9 @@
 }
 
 @media only screen and (max-width: 992px) {
-    .tile {
+    .project-tile {
         width: 100%;
         height: 300px;
         background-color: red;
     }
-    .profile-pic {
-        height: 500px;
-        max-width: auto;
-    }
-}  */
+    .

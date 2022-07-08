@@ -18,6 +18,8 @@
 .main::after {
     content: "";
     background: url(/images/portfolio-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     opacity: 0.2;
     top: 0;
     left: 0;

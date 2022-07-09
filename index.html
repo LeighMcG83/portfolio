@@ -22,94 +22,87 @@
 <body>
   <header id="header" class="header">
     <div class="container">
-      <nav class="d-flex navbar navbar-expand-lg navbar-light fixed-top top-nav">
-        <div class="container-fluid justify-content-md-center">
-          <a class="navbar-brand" href="#">Logo</a>
-
-          <div class="resume d-flex ">
-            <i class="fa fa-download" aria-hidden="true"></i>
-            <a class="resume-download text-decoration-none text-dark" role="button" href="" download>
-              Resume
-            </a>
-          </div>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="row">
+        <nav class="col-md-3 navbar navbar-expand-lg navbar-light align-self-center" id="sidebar-nav">
+          <a class="navbar-brand my-5" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav text-uppercase">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto text-uppercase">
+              <li class="nav-item active my-2">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+              <li class="nav-item my-2">
+                <a class="nav-link" href="#projects">Work</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#studies">Case studies</a>
+              <li class="nav-item my-2">
+                <a class="nav-link" href="#">Play</a>
               </li>
-              <li class="nav-item" hidden>
-                <a class="nav-link" href="#fun" tabindex="-1" aria-disabled="false">Fun stuff</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">about</a>
+              <li class="nav-item my-2">
+                <a class="nav-link" href="#">About</a>
               </li>
             </ul>
-            <!-- <ul class="nav justify-content-center text-uppercase">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">about</a>
-              </li>
-            </ul> -->
+          </div>
+        </nav>
+
+        <div class="container header-wrapper col-md-9 ">
+          <div class="row tagline d-flex justify-content-between">
+            <div class="col-12 col-md-4 align-self-center">
+              <h1 class="text-dark fs-1 fw-light sub-head">Leigh McGuinness</h1>
+              <p class="text-dark fw-light fs-4"> a <span class="text-uppercase">ux designer</span>, student and tutor
+              </p>
+            </div>
+            <img class="profile-pic img-fluid col-12 col-md-8" src="/images/profile-pic-color.png"
+              alt="leighs profile-pic">
           </div>
         </div>
-      </nav>
-    </div>
-
-    <div class="container d-flex header-wrapper row">
-      <img class="profile-pic img-fluid" src="/images/profile-pic-BW.png" alt="leighs profile-pic">
-      <div class="row tagline ">
-        <h1 class="col-12 text-dark fs-1 fw-light sub-head">Leigh McGunness</h2>
-          <p class="col-12 text-dark fw-light fs-4 text-uppercase">ux designer</p>
       </div>
-    </div>
 
+    </div>
 
   </header>
 
   <main id="main" class="main">
-    <div class="container">
-      <div class="row">
-
-        <h2 class="h2 text-dark fs-2" id="projects">Projects</h2>
-        <div class="">
-          <div class="project-tile proj1 my-3 px-2 py-2 d-flex flex-column justify-content-end">
-            <div class="opacity-box">
-              <h3 class="h3 fs-3 text-dark proj-title">play25</h3>
-              <h4 class="h4 fs-4 text-dark proj-title">App design</h4>
-            </div>
+    <section class="container">
+      <div class="row d-flex flex-wrap">
+        <h2 class="col-12 h2 text-dark fs-2" id="projects">Projects</h2>
+        <div class="project-tile bg-white proj1 my-3 mx-3 px-2 py-2 d-flex flex-column ">
+          <div class="opacity-box">
+            <h3 class="h3 fs-4 text-dark proj-title">play25</h3>
+            <h4 class="h4 fs-6 text-grey fw-light proj-title">App design</h4>
           </div>
-          <div class="project-tile proj2 my-3 px-2 py-2 d-flex flex-column justify-content-end">
-            <div class="opacity-box">
-              <h3 class="h3 fs-3 text-light proj-title">De'Villes</h3>
-              <h4 class="h4 fs-4 text-light proj-title">Web design</h4>
-            </div>
+        </div>
+        <div class="project-tile proj2 my-3 mx-3 px-2 py-2 d-flex flex-column  ">
+          <div class="opacity-box">
+            <h3 class="h3 fs-4 text-dark proj-title">De'Villes</h3>
+            <h4 class="h4 fs-6 text-grey fw-light proj-title">Web design</h4>
           </div>
-          <div class="project-tile proj3 my-3  px-2 py-2 d-flex flex-column justify-content-end">
-            <div class="opacity-box">
-              <h3 class="h3 fs-3 text-light proj-title">ITS Health Service</h3>
-              <h4 class="h4 fs-5 text-light proj-title">App design</h4>
-            </div>
+        </div>
+        <div class="project-tile proj3 my-3 mx-3 px-2 py-2 d-flex flex-column ">
+          <div class="opacity-box">
+            <h3 class="h3 fs-4 text-light proj-title">ITS Health Service</h3>
+            <h4 class="h4 fs-6 text-grey fw-light proj-title">App design</h4>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="skills" id="">
+      <div class="row d-flex flex-wrap justify-content-between">
+        <img src="/images/Adobe_XD_CC_icon.svg.png" alt="adobe xd icon" class="skill-icon mb1 img-fluid" />
+        <img src="/images/adobe-creative-cloud-2020-new-seeklogo.svg" alt="creative cloud icon"
+          class="skill-icon mb1 img-fluid" />
+        <img src="/images/marvel-icon.png" alt="marvel icon" class="skill-icon mb1 img-fluid" />
+        <img src="/images/html-icon.png" alt="html icon" class="skill-icon mb1 img-fluid" />
+        <img src="/images/css-icon.png" alt="css icon" class="skill-icon mb1 img-fluid" />
+        <img src="/images/axure-seeklogo.com.svg" alt="axure-seeklogo icon" class="skill-icon mb1 img-fluid" />
+        <img src="/images/visual-studio-code-seeklogo.com.svg" alt="vs code icon" class="skill-icon mb1 img-fluid" />
+        <img src="/images/adobe-photoshop-seeklogo.com.svg" alt="PS icon" class="skill-icon mb1 img-fluid" />
+      </div>
+    </section>
   </main>
 
   <footer id="footer" class="footer"></footer>
